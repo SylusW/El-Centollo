@@ -6,34 +6,6 @@
     <title>El Centollo | Contacto</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div id="modalPromo" class="modal-overlay">
-    <div class="modal-box">
-        <button class="modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
-        <h2>Bienvenido</h2>
-        <p>Gracias por visitar nuestra página. Mira nuestras especialidades y reserva cuando quieras.</p>
-        <a href="reservas.html" class="modal-btn">Reservar ahora</a>
-    </div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modalPromo");
-    const closeBtn = document.getElementById("closeModal");
-
-    setTimeout(() => {
-        modal.classList.add("show");
-    }, 5000);
-
-    closeBtn.addEventListener("click", () => {
-        modal.classList.remove("show");
-    });
-
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.classList.remove("show");
-        }
-    });
-});
-</script>
 <body>
     <header>
         <img class="logo" src="img/logo.png" alt="Logo de El Centollo">
