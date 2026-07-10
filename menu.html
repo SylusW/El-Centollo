@@ -6,34 +6,6 @@
     <title>El Centollo | Menú</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div id="modalPromo" class="modal-overlay">
-    <div class="modal-box">
-        <button class="modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
-        <h2>Bienvenido</h2>
-        <p>Gracias por visitar nuestra página. Mira nuestras especialidades y reserva cuando quieras.</p>
-        <a href="reservas.html" class="modal-btn">Reservar ahora</a>
-    </div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modalPromo");
-    const closeBtn = document.getElementById("closeModal");
-
-    setTimeout(() => {
-        modal.classList.add("show");
-    }, 5000);
-
-    closeBtn.addEventListener("click", () => {
-        modal.classList.remove("show");
-    });
-
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.classList.remove("show");
-        }
-    });
-});
-</script>
 <body>
     <header>
         <img class="logo" src="img/logo.png" alt="Logo de El Centollo">
@@ -156,6 +128,83 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span>⏱ 40 minutos (+ tiempo centolla)</span>
                             <span>👥 4 Comensales</span>
                             <span>👤 Arianne</span>
+                        </div>
+                    </div>
+                    <div class="bookmark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 3.5h12v18l-6-4-6 4z"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <!-- Nuevos platos agregados -->
+                <article class="receta-card">
+                    <img src="img/plato5.jpeg" alt="Centollo al ajillo">
+                    <div class="receta-content">
+                        <h3>Centollo al ajillo</h3>
+                        <div class="coleccion">1 Cooksnap</div>
+                        <p>Centollo fresco · ajo picado · perejil · aceite de oliva · guindilla · sal · pimienta</p>
+                        <div class="receta-meta">
+                            <span>⏱ 25 minutos</span>
+                            <span>👥 2 personas</span>
+                            <span>👤 Chef Especial</span>
+                        </div>
+                    </div>
+                    <div class="bookmark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 3.5h12v18l-6-4-6 4z"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="receta-card">
+                    <img src="img/plato8.jfif" alt="Risotto de centolla">
+                    <div class="receta-content">
+                        <h3>Risotto de centolla</h3>
+                        <div class="coleccion">1 Cooksnap</div>
+                        <p>Arroz arborio · carne de centolla · caldo de mariscos · cebolla · vino blanco · queso parmesano</p>
+                        <div class="receta-meta">
+                            <span>⏱ 45 minutos</span>
+                            <span>👥 4 comensales</span>
+                            <span>👤 Chef Especial</span>
+                        </div>
+                    </div>
+                    <div class="bookmark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 3.5h12v18l-6-4-6 4z"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="receta-card">
+                    <img src="img/plato9.jfif" alt="Tacos de centolla">
+                    <div class="receta-content">
+                        <h3>Tacos de centolla</h3>
+                        <div class="coleccion">1 Cooksnap</div>
+                        <p>Tortillas de maíz · carne de centolla · repollo · salsa pico de gallo · crema · cilantro</p>
+                        <div class="receta-meta">
+                            <span>⏱ 20 minutos</span>
+                            <span>👥 4 personas</span>
+                            <span>👤 Chef Especial</span>
+                        </div>
+                    </div>
+                    <div class="bookmark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 3.5h12v18l-6-4-6 4z"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="receta-card">
+                    <img src="img/plato10.jpg" alt="Centollo gratinado">
+                    <div class="receta-content">
+                        <h3>Centollo gratinado</h3>
+                        <div class="coleccion">1 Cooksnap</div>
+                        <p>Carne de centolla · bechamel · queso gratinado · pan rallado · hierbas frescas</p>
+                        <div class="receta-meta">
+                            <span>⏱ 35 minutos</span>
+                            <span>👥 2-3 personas</span>
+                            <span>👤 Chef Especial</span>
                         </div>
                     </div>
                     <div class="bookmark" aria-hidden="true">
